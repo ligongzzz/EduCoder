@@ -1,0 +1,9 @@
+﻿  Polynomial.cpp
+E:\Project\C++\Educoder\Project2\Project2\Polynomial.cpp(31,20): warning C4018:  “<”: 有符号/无符号不匹配
+E:\Project\C++\Educoder\Project2\Project2\Polynomial.cpp(40,20): warning C4018:  “<”: 有符号/无符号不匹配
+E:\Project\C++\Educoder\Project2\Project2\Polynomial.cpp(59,11): warning C4018:  “<”: 有符号/无符号不匹配
+  exercise_2.cpp
+E:\Project\C++\Educoder\Project2\Project2\Polynomial.cpp(94,18): warning C4018:  “>=”: 有符号/无符号不匹配
+  正在生成代码...
+E:\Project\C++\Educoder\Project2\Project2\exercise_2.cpp(12,18): warning C4018:  “>=”: 有符号/无符号不匹配
+  Project2.vcxproj -> E:\Project\C++\Educoder\Project2\Debug\Project2.exe
