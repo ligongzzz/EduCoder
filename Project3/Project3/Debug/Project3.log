@@ -1,0 +1,4 @@
+﻿  LinearEquations.cpp
+E:\Project\C++\Educoder\Project3\Project3\LinearEquations.cpp(7,20): warning C4018:  “<”: 有符号/无符号不匹配
+E:\Project\C++\Educoder\Project3\Project3\LinearEquations.cpp(16,20): warning C4018:  “<”: 有符号/无符号不匹配
+  Project3.vcxproj -> E:\Project\C++\Educoder\Project3\Debug\Project3.exe
