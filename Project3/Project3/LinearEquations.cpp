@@ -84,13 +84,13 @@ LinearEquations::LinearEquations(const vector<string>& s) {
 		parse_string(p.substr(pos + 1), -1);
 		++eq_num;
 	}
+	/*
 	if (eq_num < va_num) {
 		throw string("Rank does not match!");
-	}
+	}*/
 	for (auto& p : A_val) {
 		p.resize(va_num);
 	}
-	
 }
 
 vector<double> LinearEquations::solve(const vector<vector<double>>& A, const vector<double>& B) {
@@ -154,8 +154,9 @@ void LinearEquations::print_ans() {
 		else
 			cout << " ";
 		string output = to_string(X_val[p.second]); 
+		output = output.substr(0, output.find('.') + 5);
 		if (output == "-0.0000")
 			output = "0.0000";
-		cout << output.substr(0, output.find('.') + 5);
+		cout << output;
 	}
 }
