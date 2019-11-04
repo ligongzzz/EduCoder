@@ -1,8 +1,0 @@
-﻿  源.cpp
-E:\Project\C++\Educoder\Project1\Project1\源.cpp(51,12): warning C4018:  “<=”: 有符号/无符号不匹配
-E:\Project\C++\Educoder\Project1\Project1\源.cpp(54,13): warning C4018:  “>”: 有符号/无符号不匹配
-E:\Project\C++\Educoder\Project1\Project1\源.cpp(77,1): warning C4804:  “>”: 在操作中使用类型“bool”不安全
-E:\Project\C++\Educoder\Project1\Project1\源.cpp(79,20): warning C4018:  “>=”: 有符号/无符号不匹配
-E:\Project\C++\Educoder\Project1\Project1\源.cpp(166,23): warning C4018:  “<”: 有符号/无符号不匹配
-E:\Project\C++\Educoder\Project1\Project1\源.cpp(167,23): warning C4018:  “<”: 有符号/无符号不匹配
-  Project1.vcxproj -> E:\Project\C++\Educoder\Project1\Debug\Project1.exe

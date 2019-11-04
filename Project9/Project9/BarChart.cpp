@@ -31,10 +31,6 @@ void BarChart::load_data() {
 	}
 	val2.emplace_back(cur_mon_sum / (double)cur_mon_cnt);
 	fclose(f);
-
-	for (auto p : val1) {
-		cout << p << endl;
-	}
 }
 
 void BarChart::draw_lines() const {
