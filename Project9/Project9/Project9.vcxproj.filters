@@ -33,7 +33,7 @@
     <ClCompile Include="BarChart.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main2.cpp">
+    <ClCompile Include="main1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

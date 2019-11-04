@@ -34,12 +34,6 @@ void BarChart::load_data() {
 }
 
 void BarChart::draw_lines() const {
-	Graph_lib::Rectangle rect_back(Point(0, 0), Point(1050, 450));
-	rect_back.set_fill_color(Graph_lib::Color::white);
-	rect_back.set_color(Graph_lib::Color::white);
-	rect_back.set_style(Graph_lib::Line_style::solid);
-	rect_back.draw();
-
 	Graph_lib::Axis x(Graph_lib::Axis::x, Point(50, 410), 960);
 	x.set_color(Graph_lib::Color::black);
 	x.set_style(Graph_lib::Line_style::solid);
@@ -70,8 +64,12 @@ void BarChart::draw_lines() const {
 		int h1 = int(10 * val1[i - 1]), h2 = int(10 * val2[i - 1]);
 		Graph_lib::Rectangle rect1(Point(cur_x - 23, 410 - h1), Point(cur_x - 3, 410));
 		rect1.set_fill_color(Graph_lib::Color::red);
+		rect1.set_color(Graph_lib::Color::red);
+		rect1.set_style(Graph_lib::Line_style::solid);
 		rect1.draw();
 		Graph_lib::Rectangle rect2(Point(cur_x + 3, 410 - h2), Point(cur_x + 23, 410));
+		rect2.set_color(Graph_lib::Color::blue);
+		rect2.set_style(Graph_lib::Line_style::solid);
 		rect2.set_fill_color(Graph_lib::Color::blue);
 		rect2.draw();
 
@@ -88,6 +86,7 @@ void BarChart::draw_lines() const {
 	// Tag
 	Graph_lib::Rectangle tag_rect(Point(860,50), Point(1010,110));
 	tag_rect.set_color(Graph_lib::Color::black);
+	tag_rect.set_fill_color(Graph_lib::Color::white);
 	tag_rect.set_style(Graph_lib::Line_style::solid);
 	tag_rect.draw();
 	Graph_lib::Rectangle rect1(Point(870, 60), Point(910, 70));
