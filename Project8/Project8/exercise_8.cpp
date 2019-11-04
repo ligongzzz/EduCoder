@@ -6,7 +6,7 @@ int main()
 {
 	/********** Begin **********/
 
-	bool exercise_1 = false;
+	bool exercise_1 = true;
 	if (exercise_1) {
 		//第一关执行代码
 			//Please fix Token_Exercise_1.h and Token_Exercise_1.cpp
