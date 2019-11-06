@@ -10,6 +10,7 @@ public:
 		label_r1 = 232, label_r2 = 245, label_r3 = 230;
 
 	AnalogClock() = default;
+	void sub_thread() const;
 protected:
 	virtual void draw_lines() const;
 	void draw_clock() const;

@@ -3,6 +3,9 @@
 #include "std_lib_facilities.h"
 #include <ctime>
 #include <iostream>
+#include <thread>
+#include <FL/Fl.H>
+#include <FL/Fl_Window.H>
 
 #define CLOCK_RELEASE
 
@@ -101,9 +104,24 @@ void AnalogClock::draw_clock() const {
 	line_sec.draw();
 }
 
-void AnalogClock::draw_lines() const{
+void AnalogClock::sub_thread() const {
+	auto cur_time = time(NULL);
 	while (true) {
-		draw_clock();
-		Sleep(1000);
+		if (time(NULL) >= cur_time + 1) {
+			cur_time = time(NULL);
+			draw_lines();
+		}
 	}
+}
+
+void AnalogClock::draw_lines() const{
+#ifndef CLOCK_RELEASE
+	while (true) {
+			draw_clock();
+			Sleep(1000);
+		}
+#endif // CLOCK_RELEASE
+#ifndef CLOCK_DEBUG
+	draw_clock();
+#endif // CLOCK_DEBUG
 }
